@@ -21,7 +21,6 @@ public class Trees {
             super(children);
             this.value = value;
         }
-
         public int getValue() {
             return value;
         }
