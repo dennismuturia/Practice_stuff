@@ -11,6 +11,13 @@ import static com.company.Graph.printGraph;
 public class Main {
     public static void main(String[] args) {
         //Write the code here
+        SimpleTree.BinarySearchTree binarySearchTree = new SimpleTree.BinarySearchTree();
+        if (binarySearchTree.isBST())
+            System.out.println("Is BST");
+        else
+            System.out.println("Its not BST");
+
+        /*
         int V = 5;
         Graph.Graphh graphh = new Graph.Graphh(V);
         addEdge(graphh, 0, 1);
@@ -19,6 +26,7 @@ public class Main {
         addEdge(graphh, 1, 4);
 
         printGraph(graphh);
+        */
     }
     static List<String>getRecords(String filename){
         List<String>records = new ArrayList<>();

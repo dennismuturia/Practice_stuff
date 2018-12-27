@@ -1,17 +1,19 @@
 package com.company;
 
 public class SimpleTree {
-    public class Node{
+    public static class Node{
         //FIrst create some private global variables to avoid external manipulation
         private Node left;
         private Node right;
         private int V;
+
 
         public Node(Node left, Node right, int V){
             this.left = left;
             this.right = right;
             this.V = V;
         }
+
         //Create Getters in this method
         public Node getLeft() {
             return left;
@@ -28,7 +30,7 @@ public class SimpleTree {
     //Since we have all what it takes to code for a binary tree  lets start with
     //Checking if its a Binary search tree or not
 
-    public class BinarySearchTree{
+    public static class BinarySearchTree{
         //Assign root a node
         Node root;
         //Is it a binary search tree or not
