@@ -22,7 +22,7 @@ public class Graph {
             }
         }
     }
-    static void addEdge(Graphh graph, int src, int dest){
+    public static void addEdge(Graphh graph, int src, int dest){
         //Add  an edge from src to dest
         graph.adListArray[src].add(dest);
 

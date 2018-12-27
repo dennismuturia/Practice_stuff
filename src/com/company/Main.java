@@ -1,15 +1,24 @@
 package com.company;
 
-import java.awt.*;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.company.Graph.addEdge;
+import static com.company.Graph.printGraph;
+
 public class Main {
     public static void main(String[] args) {
         //Write the code here
+        int V = 5;
+        Graph.Graphh graphh = new Graph.Graphh(V);
+        addEdge(graphh, 0, 1);
+        addEdge(graphh, 2, 4);
+        addEdge(graphh, 3, 2);
+        addEdge(graphh, 1, 4);
+
+        printGraph(graphh);
     }
     static List<String>getRecords(String filename){
         List<String>records = new ArrayList<>();
